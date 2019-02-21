@@ -4,19 +4,24 @@
            box-sizing: border-box;
        }
 
-
+       /* -------------- p -----------------*/
        p {
            color: white;
            font-family: 'Overlock', cursive;
        }
 
+       /* ------------ Header ----------------*/
        header {
            background-color: black;
        }
 
+       /* ----------- Slideshow -------------*/
+
        #slideshow {
            background-color: black;
        }
+
+       /* -------------------- Navbar -------------*/
 
        navbar {
            padding: 2em;
@@ -38,6 +43,7 @@
            color: red;
        }
 
+       /* ----------- Footer -------------*/
 
        footer {
            background-color: lightgray;
