@@ -9,49 +9,82 @@
     <link href="https://fonts.googleapis.com/css?family=Overlock" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-
-
-    <style>
-    </style>
 
 
 </head>
 
-
-<header>
-
-
-</header>
-
-
-
 <body>
 
-    <div class="row">
-        <div class="col-md-4">1</div>
-        <div class="col-md-4">2</div>
-        <div class="col-md-4">3</div>
+    <header class="row">
+        <div class="col-md-4">123123</div>
+        <div class="col-md-8">
+            <nav class="pull-right">
+                9879786
+
+            </nav>
+        </div>
 
 
 
+    </header>
 
+    <div id="wrapper">
+        <main class="col-md-12">
+            <section class="slideshow-container">
+
+
+                <div class="mySlides fade">
+                    <img src=slideshow/Slide-1.jpg alt="">
+                </div>
+
+                <div class="mySlides fade">
+                    <img src=slideshow/Slide-1.jpg alt="">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <img src=slideshow/Slide-1.jpg alt="">
+
+                </div>
+
+
+            </section>
+
+
+        </main>
 
     </div>
-
-
-
-
-
     <footer>
 
     </footer>
 
-    <script>
-    </script>
+
 </body>
 
 
+
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+</script>
 
 
 </html>
