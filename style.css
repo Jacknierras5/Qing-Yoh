@@ -4,15 +4,46 @@
            box-sizing: border-box;
        }
 
-       body {
-           background-color: #fff;
-       }
 
        p {
            color: white;
            font-family: 'Overlock', cursive;
        }
 
+       header {
+           background-color: black;
+       }
+
+       #slideshow {
+           background-color: black;
+       }
+
+       navbar {
+           padding: 2em;
+
+       }
+
        navbar a {
            float: right;
+           padding: 1em;
+           margin-top: 1em;
+           font-family: 'Overlock', cursive;
+           color: red;
+       }
+
+       navbar a:hover {
+
+           text-decoration: underline;
+           background-color: none;
+       }
+
+
+       footer {
+           background-color: lightgray;
+       }
+
+       td {
+           padding: 5px;
+           margin-left;
+           text-align: left;
        }

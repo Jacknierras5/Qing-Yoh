@@ -18,21 +18,21 @@
 
 <body>
 
-    <header class="row col-md-12">
-        <div class="col-md-4">
-            3
-        </div>
+    <header>
+
         <navbar class="col-md-8">
-            <ul>
-                <a href="">1</a>
-                <a href="">2</a>
-                <a href="">3</a>
-            </ul>
+            <img src="logo-navbar.jpg" alt="">
+            <a href="">Om os</a>
+            <a href="">Take away</a>
+            <a href="">Running</a>
+            <a href="">Sushi & wok</a>
+            <a href="">Forside</a>
+
         </navbar>
     </header>
 
     <div id="wrapper">
-        <main class="row">
+        <main class="">
             <section>
 
                 <div id="slideshow">
@@ -86,9 +86,9 @@
 
     setInterval(function() {
         $('#slideshow > div:first')
-            .fadeOut(1000)
+            .fadeOut(0)
             .next()
-            .fadeIn(1000)
+            .fadeIn(0)
             .end()
             .appendTo('#slideshow');
     }, 3000);
