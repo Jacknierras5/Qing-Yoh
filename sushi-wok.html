@@ -32,24 +32,7 @@
     </header>
 
     <div id="wrapper">
-        <main class="">
 
-            <section>
-                <div id="slideshow">
-                    <div>
-                        <img class="col-md-12" src="/slideshow/Slide-1.jpg">
-                    </div>
-                    <div>
-                        <img class="col-md-12" src="/slideshow/silde-2.jpg">
-                    </div>
-                    <div>
-                        <img class="col-md-12" src="/slideshow/silde-3.jpg">
-                    </div>
-                </div>
-            </section>
-
-
-        </main>
 
     </div>
 
@@ -79,16 +62,6 @@
 
 
 <script>
-    $("#slideshow > div:gt(0)").hide();
-
-    setInterval(function() {
-        $('#slideshow > div:first')
-            .fadeOut(0)
-            .next()
-            .fadeIn(0)
-            .end()
-            .appendTo('#slideshow');
-    }, 3000);
 </script>
 
 
