@@ -4,10 +4,31 @@
            box-sizing: border-box;
        }
 
+       html {
+           background-color: black;
+
+       }
+
+       body {
+           background-color: black;
+       }
+
        /* -------------- p -----------------*/
        p {
            color: white;
            font-family: 'Overlock', cursive;
+       }
+
+       h1 {
+           color: white;
+           font-family: 'Overlock', cursive;
+           font-size: 3em;
+       }
+
+       h2 {
+           color: white;
+           font-family: 'Overlock', cursive;
+           font-size: 2em;
        }
 
        /* ------------ Header ----------------*/
@@ -53,4 +74,40 @@
            padding: 5px;
            margin-left;
            text-align: left;
+       }
+
+
+
+
+       /* ----------- Running -------------*/
+
+       .column1 {
+           float: left;
+           width: 30%;
+           padding: 10px;
+           height: 300px;
+           margin-left: 5em;
+       }
+
+       .column2 {
+           float: left;
+           width: 60%;
+           padding: 10px;
+           height: 300px;
+       }
+
+       .col3 {
+           float: left;
+           width: 90%;
+           padding: 10px;
+           height: 300px;
+           margin-left: 5em;
+           text-align: center;
+       }
+
+       /* Clear floats after the columns */
+       .row:after {
+           content: "";
+           display: table;
+           clear: both;
        }
