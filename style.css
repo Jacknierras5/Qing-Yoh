@@ -4,9 +4,15 @@
            box-sizing: border-box;
        }
 
-       body {}
+       body {
+           background-color: #fff;
+       }
 
        p {
            color: white;
            font-family: 'Overlock', cursive;
+       }
+
+       navbar a {
+           float: right;
        }

@@ -18,37 +18,35 @@
 
 <body>
 
-    <header class="row">
-        <div class="col-md-4">123123</div>
-        <div class="col-md-8">
-            <nav class="pull-right">
-                9879786
-
-            </nav>
+    <header class="row col-md-12">
+        <div class="col-md-4">
+            3
         </div>
-
-
-
+        <navbar class="col-md-8">
+            <ul>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+            </ul>
+        </navbar>
     </header>
 
     <div id="wrapper">
-        <main class="col-md-12">
-            <section class="slideshow-container">
+        <main class="row">
+            <section>
 
-
-                <div class="mySlides fade">
-                    <img src=slideshow/Slide-1.jpg alt="">
+                <div id="slideshow">
+                    <div>
+                        <img class="col-md-12" src="/slideshow/Slide-1.jpg">
+                    </div>
+                    <div>
+                        <img class="col-md-12" src="/slideshow/silde-2.jpg">
+                    </div>
+                    <div>
+                        <img class="col-md-12" src="/slideshow/silde-3.jpg">
+                    </div>
                 </div>
 
-                <div class="mySlides fade">
-                    <img src=slideshow/Slide-1.jpg alt="">
-
-                </div>
-
-                <div class="mySlides fade">
-                    <img src=slideshow/Slide-1.jpg alt="">
-
-                </div>
 
 
             </section>
@@ -57,7 +55,23 @@
         </main>
 
     </div>
+
+
     <footer>
+        <table>
+            <tr>
+                <td> <img src="pointer.png" alt=""></td>
+                <td>Amagerbrogade 93, 2300 København S, Danmark</td>
+            </tr>
+            <tr>
+                <td> <img src="red-phone.png" alt=""></td>
+                <td>+45 32 12 99 44</td>
+            </tr>
+            <tr>
+                <td> <img src="letter.png" alt=""></td>
+                <td>Restaurant@QingYoh.dk</td>
+            </tr>
+        </table>
 
     </footer>
 
@@ -68,22 +82,16 @@
 
 
 <script>
-    var slideIndex = 0;
-    showSlides();
+    $("#slideshow > div:gt(0)").hide();
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
-    }
+    setInterval(function() {
+        $('#slideshow > div:first')
+            .fadeOut(1000)
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#slideshow');
+    }, 3000);
 </script>
 
 
