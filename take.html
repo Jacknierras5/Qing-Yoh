@@ -20,7 +20,8 @@
 
     <header>
 
-        <navbar class="col-md-8">
+
+        <navbar class="col-md-8 d-none d-sm-block">
             <img src="logo-navbar.jpg" alt="">
             <a href="om.html">Om os</a>
             <a href="take.html">Take away</a>
@@ -29,14 +30,41 @@
             <a href="forside.html">Forside</a>
 
         </navbar>
+
+
+        <div class="nyBar d-md-none">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+
+            <div class="menu">
+                <ul>
+                    <a href="#">
+                        <li>LINK ONE</li>
+                    </a>
+                    <a href="#">
+                        <li>LINK TWO</li>
+                    </a>
+                    <a href="#">
+                        <li>LINK THREE</li>
+                    </a>
+                    <a href="#">
+                        <li>LINK FOUR</li>
+                    </a>
+                    <a href="#">
+                        <li>LINK FIVE</li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
     </header>
 
     <div id="wrapper">
 
-        <section>
+        <main class="col-md-12">
 
 
-        </section>
+        </main>
 
 
     </div>
@@ -67,6 +95,26 @@
 
 
 <script>
+    $(document).ready(function() {
+
+        $(".cross").hide();
+        $(".menu").hide();
+        $(".hamburger").click(function() {
+            $(".menu").slideToggle("slow", function() {
+                $(".hamburger").hide();
+                $(".cross").show();
+            });
+        });
+
+        $(".cross").click(function() {
+            $(".menu").slideToggle("slow", function() {
+                $(".cross").hide();
+                $(".hamburger").show();
+            });
+        });
+
+    });
+    $("#slideshow > div:gt(0)").hide();
 </script>
 
 

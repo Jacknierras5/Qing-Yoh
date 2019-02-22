@@ -20,7 +20,8 @@
 
     <header>
 
-        <navbar class="col-md-8">
+
+        <navbar class="col-md-8 d-none d-sm-block">
             <img src="logo-navbar.jpg" alt="">
             <a href="om.html">Om os</a>
             <a href="take.html">Take away</a>
@@ -29,14 +30,41 @@
             <a href="forside.html">Forside</a>
 
         </navbar>
+
+
+        <div class="nyBar d-md-none">
+            <button class="hamburger">&#9776;</button>
+            <button class="cross">&#735;</button>
+
+            <div class="menu">
+
+                <a href="#">
+                    <li>LINK ONE</li>
+                </a>
+                <a href="#">
+                    <li>LINK TWO</li>
+                </a>
+                <a href="#">
+                    <li>LINK THREE</li>
+                </a>
+                <a href="#">
+                    <li>LINK FOUR</li>
+                </a>
+                <a href="#">
+                    <li>LINK FIVE</li>
+                </a>
+
+            </div>
+
+        </div>
     </header>
 
     <div id="wrapper">
 
 
-        <section>
+        <main>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 info">
                     <h1>All-You-Can-Eat</h1>
                     <h2>Mandag - Torsdag</h2>
                     <p>170,- DKK</p>
@@ -50,10 +78,14 @@
                 </div>
                 <div class="col-md-5">weæFKweef</div>
                 <div class="col-md-12">
-                    <h1>Studierabat</h1>
+                    <h1>Studierabat -15%</h1>
+                    <p>Vis et gyldigt studiekort og modtag rabat :D</p>
+
+                    <h1>Pensionistrabat -15% </h1>
+                    <p>Er du +60 år får du rabat når du spiser hos os :D</p>
                 </div>
             </div>
-        </section>
+        </main>
 
 
 
@@ -86,6 +118,27 @@
 
 
 <script>
+    $(document).ready(function() {
+
+        $(".cross").hide();
+        $(".menu").hide();
+        $(".hamburger").click(function() {
+            $(".menu").slideToggle("slow", function() {
+                $(".hamburger").hide();
+                $(".cross").show();
+            });
+        });
+
+        $(".cross").click(function() {
+            $(".menu").slideToggle("slow", function() {
+                $(".cross").hide();
+                $(".hamburger").show();
+            });
+        });
+
+    });
+    $("#slideshow > div:gt(0)").hide();
+
     $("#slideshow > div:gt(0)").hide();
 
     setInterval(function() {
