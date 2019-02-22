@@ -81,33 +81,27 @@
 
        /* ----------- Running -------------*/
 
-       .column1 {
-           float: left;
-           width: 30%;
-           padding: 10px;
-           height: 300px;
+
+       .row {
+           background-color: black;
+       }
+
+       .col-md-4 {
            margin-left: 5em;
+           margin-top: 2em;
+
        }
 
-       .column2 {
-           float: left;
-           width: 60%;
-           padding: 10px;
-           height: 300px;
-       }
+       .col-md-12 {}
 
-       .col3 {
-           float: left;
-           width: 90%;
-           padding: 10px;
-           height: 300px;
+       /* ----------- Take -------------*/
+
+
+
+       /* ----------- om -------------*/
+
+       .col-md-6 {
+
            margin-left: 5em;
-           text-align: center;
-       }
-
-       /* Clear floats after the columns */
-       .row:after {
-           content: "";
-           display: table;
-           clear: both;
+           margin-bottom: 5em;
        }
