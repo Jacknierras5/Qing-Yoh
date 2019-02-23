@@ -30,7 +30,7 @@
         border-radius: 2%;
         margin: 1rem;
         padding: 1rem;
-        background: linear-gradient(to bottom, #ffffff -20%, #ff9933 80%);
+        background: linear-gradient(to bottom right, #000066 0%, #ff0000 100%);
     }
 
     #liste {
@@ -53,7 +53,7 @@
     }
 
     h2 {
-        color: black;
+        color: white;
         text-align: center;
         font-size: 2em;
         margin-bottom: 1rem;
@@ -67,14 +67,14 @@
     /* Menu Placering */
     .menu {
         text-align: center;
-        background-color: white;
+        background-color: black;
         padding: .5rem;
         margin-bottom: 2rem;
     }
 
     /* Menu knapper */
     button {
-        background-color: orange;
+        background-color: lightgray;
         color: white;
         margin: .5rem;
         padding-left: 1rem;
@@ -102,10 +102,10 @@
         width: 50%;
         height: auto;
         padding-bottom: 2rem;
-        top: 100px;
+        top: 300px;
         left: 27%;
         position: fixed;
-        background: linear-gradient(to bottom, #ffffff -20%, #ff9933 80%);
+        background: linear-gradient(to bottom right, #000066 0%, #ff0000 100%);
 
     }
 
@@ -301,7 +301,7 @@
                         document.querySelector("#indhold").innerHTML = `
                             <article class="popup">
                             <h2>${kategorier.navn}</h2>
-                            <img src="bistro_billeder/imgs/small/${kategorier.billede}-sm.jpg"</p>
+                            <img src="mad/${kategorier.billede}-sm.jpg"</p>
                                 <br>
                             <p>${kategorier.lang}</p>
                                 <br>
