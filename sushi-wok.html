@@ -43,11 +43,14 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+        width: 50%;
+        height: 50%;
     }
 
     .popup img {
         display: block;
-        width: 90%;
+        width: 50%;
+        height: 50%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -286,7 +289,7 @@
                     let template = `
                             <article class="kategorier">
                             <h2>${kategorier.navn}</h2>
-                            <img src="mad/imgs/small/${kategorier.billede}-sm.jpg"</p>
+                            <img src="mad/imgs/${kategorier.billede}.jpg"</p>
                                 <br>
                             <p>${kategorier.kort}</p><br>
                             <p>Oprindelse: ${kategorier.oprindelse}</p>
@@ -301,7 +304,7 @@
                         document.querySelector("#indhold").innerHTML = `
                             <article class="popup">
                             <h2>${kategorier.navn}</h2>
-                            <img src="mad/${kategorier.billede}-sm.jpg"</p>
+                            <img src="mad/imgs/${kategorier.billede}.jpg"</p>
                                 <br>
                             <p>${kategorier.lang}</p>
                                 <br>
