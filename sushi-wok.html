@@ -22,7 +22,7 @@
     }
 
     body {
-        font-family: 'Cormorant', serif;
+        font-family: 'Overlock', cursive;
 
     }
 
@@ -74,7 +74,7 @@
 
     /* Menu knapper */
     button {
-        background-color: lightgray;
+        background-color: orange;
         color: white;
         margin: .5rem;
         padding-left: 1rem;
@@ -83,6 +83,7 @@
         padding-bottom: .2rem;
         border-radius: 2rem;
         font-size: 1rem;
+        font-family: 'Overlock', cursive;
     }
 
     /* Menu valte knap */
@@ -131,7 +132,6 @@
         width: 100%;
 
     }
-
 </style>
 
 
@@ -180,7 +180,9 @@
     <div id="wrapper">
         <main>
             <section>
-
+                <div class="col-md-12 enkel">
+                    <h1>Bestil retter enkeltvis</h1>
+                </div>
 
                 <div id="popup">
                     <div id="luk"><button>X</button></div>
@@ -193,11 +195,10 @@
                 </div>
 
                 <div class="col-md-12 knapper">
-                    <button class="filter valgt" data-hold="alle">Forside</button>
-                    <button class="filter" data-hold="forretter">Forret</button>
-                    <button class="filter" data-hold="hovedretter">Hovedret</button>
-                    <button class="filter" data-hold="desserter">Dessert</button>
-                    <button class="filter" data-hold="sideorders">Små retter</button>
+                    <button class="filter valgt" data-hold="alle">Alle</button>
+                    <button class="filter" data-hold="forretter">Foretter</button>
+                    <button class="filter" data-hold="hovedretter">Hovedretter</button>
+                    <button class="filter" data-hold="sideorders">Wok</button>
                     <button class="filter" data-hold="drikkevarer">Drikkevarer</button>
 
                 </div>
@@ -336,7 +337,6 @@
         }
         getJson();
     }
-
 </script>
 
 
