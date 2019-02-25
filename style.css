@@ -130,6 +130,7 @@
            background-color: black;
            color: #444;
            justify-content: center;
+
        }
 
        .box {
@@ -269,18 +270,8 @@
        @media screen and (max-width: 600px) {
 
 
-           #liste {
-               grid-template-columns: 1fr;
-
-           }
-
            .kategorier {
                width: 375px;
 
            }
-
-
-
-
-
        }
