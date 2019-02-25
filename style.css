@@ -266,12 +266,3 @@
        }
 
        /* ----- Media queries --------- */
-
-       @media screen and (max-width: 600px) {
-
-
-           .kategorier {
-               width: 375px;
-
-           }
-       }
