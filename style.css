@@ -121,6 +121,7 @@
        /* ----------- Take -------------*/
 
 
+       .takeaway {}
 
 
        .grid {
@@ -139,6 +140,19 @@
            border-radius: 5px;
            padding: 20px;
            font-size: 150%;
+       }
+
+       @media only screen and (max-width:697px) {
+
+           .grid {
+
+               display: grid;
+               grid-template-columns: 300px;
+               grid-gap: 2em;
+               background-color: black;
+               color: #444;
+               justify-content: center;
+           }
        }
 
 
