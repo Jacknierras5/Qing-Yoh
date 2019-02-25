@@ -38,9 +38,12 @@
 
        /* ----------- Slideshow -------------*/
 
-       #slideshow {
-           background-color: black;
+       .forsidebillede img {
+           width: 100%;
+           height: auto;
+
        }
+
 
        /* -------------------- Navbar -------------*/
 
